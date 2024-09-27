@@ -26,10 +26,10 @@ npm install pm2 -g
 
 ## Scripts
 - `npm run build`: Compiles the TypeScript files.
-- `npm run start`: Starts the bot using Node.js (production mode).
-- `npm run dev`: Starts the bot in development mode with nodemon for automatic restarts.
+- `npm run start`: Starts the express using Node.js (production mode).
+- `npm run dev`: Starts the express in development mode with nodemon for automatic restarts.
 - `npm run format`: Formats the code using Prettier.
 - `npm run prepare`: Prepares the project by building it before deployment.
-- `npm run bg:start`: Builds the project and starts the bot in the background using PM2.
-- `npm run bg:restart`: Restarts the background bot process.
-- `npm run bg:logs`: Displays the bot logs from PM2.
+- `npm run bg:start`: Builds the project and starts the express in the background using PM2.
+- `npm run bg:restart`: Restarts the background express process.
+- `npm run bg:logs`: Displays the express logs from PM2.
