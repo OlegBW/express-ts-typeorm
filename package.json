@@ -1,0 +1,38 @@
+{
+  "name": "express-ts-typeorm",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node build/index.js",
+    "dev": "nodemon",
+    "format": "prettier --write ./src",
+    "prepare": "npm run build",
+    "bg:start": "npm run prepare && pm2 start build/index.js --name express",
+    "bg:restart": "npm run prepare && pm2 restart express",
+    "bg:logs": "pm2 logs express --lines 1000 -f"
+  },
+  "keywords": [
+    "typescript",
+    "express",
+    "typeorm"
+  ],
+  "author": "OlegBW",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@types/node": "^22.7.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20"
+  }
+}
